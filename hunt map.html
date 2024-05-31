@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6bf8d6dd758473a614d0946b35686a1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6bf8d6dd758473a614d0946b35686a1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6bf8d6dd758473a614d0946b35686a1c = L.map(
+                "map_6bf8d6dd758473a614d0946b35686a1c",
+                {
+                    center: [38.5765, -121.4813],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb968cfd534ebde60d17e351f9be9d84 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var marker_08caf67f9d20e284b99925331e70ef0d = L.marker(
+                [38.5704, -121.4816],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_33e8592497ed73a321a34f1a4fa215e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08caf67f9d20e284b99925331e70ef0d.setIcon(icon_33e8592497ed73a321a34f1a4fa215e8);
+        
+    
+        var popup_76a43f445f3d30b43d414c034b8d6384 = L.popup({"maxWidth": 300});
+
+        
+            var html_9c4454976522877dff5f98eae20667a3 = $(`<div id="html_9c4454976522877dff5f98eae20667a3" style="width: 100.0%; height: 100.0%;">     <b>1. Alaro Craft Brewery</b><br>     Address: 2004 Capitol Avenue, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_76a43f445f3d30b43d414c034b8d6384.setContent(html_9c4454976522877dff5f98eae20667a3);
+        
+
+        marker_08caf67f9d20e284b99925331e70ef0d.bindPopup(popup_76a43f445f3d30b43d414c034b8d6384)
+        ;
+
+        
+    
+    
+            marker_08caf67f9d20e284b99925331e70ef0d.bindTooltip(
+                `<div>
+                     1. Alaro Craft Brewery
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eed3770c16d3898e8c00888bfb5e6c63 = L.marker(
+                [38.5772, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_95e34aac19e6efa7f65e37ef1fda7b13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eed3770c16d3898e8c00888bfb5e6c63.setIcon(icon_95e34aac19e6efa7f65e37ef1fda7b13);
+        
+    
+        var popup_fba85672da9bc632cc736bc91ae40f44 = L.popup({"maxWidth": 300});
+
+        
+            var html_257d4f3ec089c64bde6cd923dd5a22f6 = $(`<div id="html_257d4f3ec089c64bde6cd923dd5a22f6" style="width: 100.0%; height: 100.0%;">     <b>2. Azul Mexican Food/Tequila Bar</b><br>     Address: 1050 20Th St Ste 140, Sacramento, Ca 95811<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_fba85672da9bc632cc736bc91ae40f44.setContent(html_257d4f3ec089c64bde6cd923dd5a22f6);
+        
+
+        marker_eed3770c16d3898e8c00888bfb5e6c63.bindPopup(popup_fba85672da9bc632cc736bc91ae40f44)
+        ;
+
+        
+    
+    
+            marker_eed3770c16d3898e8c00888bfb5e6c63.bindTooltip(
+                `<div>
+                     2. Azul Mexican Food/Tequila Bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24e895bc69001647661d46f3e643b5b5 = L.marker(
+                [38.5749, -121.4824],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_0aa5d82af1c3aac2bca6fe58f0951c14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_24e895bc69001647661d46f3e643b5b5.setIcon(icon_0aa5d82af1c3aac2bca6fe58f0951c14);
+        
+    
+        var popup_0efccb99dc6781816f3a952cd15ad2ef = L.popup({"maxWidth": 300});
+
+        
+            var html_77e1911126d29a7f7319b3e4aa58b7b2 = $(`<div id="html_77e1911126d29a7f7319b3e4aa58b7b2" style="width: 100.0%; height: 100.0%;">     <b>3. Badlands</b><br>     Address: 2003 K St, Sacramento, Ca 95811-4216<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_0efccb99dc6781816f3a952cd15ad2ef.setContent(html_77e1911126d29a7f7319b3e4aa58b7b2);
+        
+
+        marker_24e895bc69001647661d46f3e643b5b5.bindPopup(popup_0efccb99dc6781816f3a952cd15ad2ef)
+        ;
+
+        
+    
+    
+            marker_24e895bc69001647661d46f3e643b5b5.bindTooltip(
+                `<div>
+                     3. Badlands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fe8e84b96256c17c3290d554c2217ab = L.marker(
+                [38.5747, -121.4706],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_09e339b1cbbe1eb2bf5a5d749ecb68d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9fe8e84b96256c17c3290d554c2217ab.setIcon(icon_09e339b1cbbe1eb2bf5a5d749ecb68d1);
+        
+    
+        var popup_709c96cb45c33b355f98a9794ab2d59d = L.popup({"maxWidth": 300});
+
+        
+            var html_2801a092be2f3a7c6b78174889a0c34a = $(`<div id="html_2801a092be2f3a7c6b78174889a0c34a" style="width: 100.0%; height: 100.0%;">     <b>4. Barwest</b><br>     Address: 2724 J St, Sacramento, Ca 95816-4314<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_709c96cb45c33b355f98a9794ab2d59d.setContent(html_2801a092be2f3a7c6b78174889a0c34a);
+        
+
+        marker_9fe8e84b96256c17c3290d554c2217ab.bindPopup(popup_709c96cb45c33b355f98a9794ab2d59d)
+        ;
+
+        
+    
+    
+            marker_9fe8e84b96256c17c3290d554c2217ab.bindTooltip(
+                `<div>
+                     4. Barwest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f9ea6d7cccc7fd17e5498077dcf536c = L.marker(
+                [38.5733, -121.4671],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_e34a1ed7dae0fadf79644f528c234cbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f9ea6d7cccc7fd17e5498077dcf536c.setIcon(icon_e34a1ed7dae0fadf79644f528c234cbe);
+        
+    
+        var popup_ffb27312f4853c632d8f6d621ff5cb6f = L.popup({"maxWidth": 300});
+
+        
+            var html_f21e624605dd25b75416865148b26805 = $(`<div id="html_f21e624605dd25b75416865148b26805" style="width: 100.0%; height: 100.0%;">     <b>5. Blue Cue</b><br>     Address: 1004 28Th St, Sacramento, Ca 95816-5108<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_ffb27312f4853c632d8f6d621ff5cb6f.setContent(html_f21e624605dd25b75416865148b26805);
+        
+
+        marker_1f9ea6d7cccc7fd17e5498077dcf536c.bindPopup(popup_ffb27312f4853c632d8f6d621ff5cb6f)
+        ;
+
+        
+    
+    
+            marker_1f9ea6d7cccc7fd17e5498077dcf536c.bindTooltip(
+                `<div>
+                     5. Blue Cue
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_258bf91f2132a55311e4c34702780a77 = L.marker(
+                [38.5749, -121.4826],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_7c219de0066d2a1992cfa3ce88e96593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_258bf91f2132a55311e4c34702780a77.setIcon(icon_7c219de0066d2a1992cfa3ce88e96593);
+        
+    
+        var popup_20322c799034e6e966334da828bb35cc = L.popup({"maxWidth": 300});
+
+        
+            var html_798351c715951b858a31395c09c2e42c = $(`<div id="html_798351c715951b858a31395c09c2e42c" style="width: 100.0%; height: 100.0%;">     <b>6. Faces Nightclub</b><br>     Address: 2000 K St, Sacramento, Ca 95811-4217<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_20322c799034e6e966334da828bb35cc.setContent(html_798351c715951b858a31395c09c2e42c);
+        
+
+        marker_258bf91f2132a55311e4c34702780a77.bindPopup(popup_20322c799034e6e966334da828bb35cc)
+        ;
+
+        
+    
+    
+            marker_258bf91f2132a55311e4c34702780a77.bindTooltip(
+                `<div>
+                     6. Faces Nightclub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d50b907a4f8d5ee5a6e9cbe08554ac5 = L.marker(
+                [38.5767, -121.4853],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_ac6fbaed40c1b43de32b7e70adabf78a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d50b907a4f8d5ee5a6e9cbe08554ac5.setIcon(icon_ac6fbaed40c1b43de32b7e70adabf78a);
+        
+    
+        var popup_79e184b935838d7c3b772f3318895c86 = L.popup({"maxWidth": 300});
+
+        
+            var html_4aa490eb3222f5aaddc32ecd7a7092d6 = $(`<div id="html_4aa490eb3222f5aaddc32ecd7a7092d6" style="width: 100.0%; height: 100.0%;">     <b>7. Goldfield Trading Post</b><br>     Address: 1630 J Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_79e184b935838d7c3b772f3318895c86.setContent(html_4aa490eb3222f5aaddc32ecd7a7092d6);
+        
+
+        marker_1d50b907a4f8d5ee5a6e9cbe08554ac5.bindPopup(popup_79e184b935838d7c3b772f3318895c86)
+        ;
+
+        
+    
+    
+            marker_1d50b907a4f8d5ee5a6e9cbe08554ac5.bindTooltip(
+                `<div>
+                     7. Goldfield Trading Post
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf512fa4fb9beed08410eaf1217cf9f8 = L.marker(
+                [38.5747, -121.4709],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_68d78dcb00bdd7b08cb90d591de060f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf512fa4fb9beed08410eaf1217cf9f8.setIcon(icon_68d78dcb00bdd7b08cb90d591de060f9);
+        
+    
+        var popup_ab7700e055e4a692506c993fd05a88ea = L.popup({"maxWidth": 300});
+
+        
+            var html_47327fdb30877b2732e852fc6729d8a7 = $(`<div id="html_47327fdb30877b2732e852fc6729d8a7" style="width: 100.0%; height: 100.0%;">     <b>8. Harlow's</b><br>     Address: 2708 J St, Sacramento, Ca 95816-4314<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_ab7700e055e4a692506c993fd05a88ea.setContent(html_47327fdb30877b2732e852fc6729d8a7);
+        
+
+        marker_cf512fa4fb9beed08410eaf1217cf9f8.bindPopup(popup_ab7700e055e4a692506c993fd05a88ea)
+        ;
+
+        
+    
+    
+            marker_cf512fa4fb9beed08410eaf1217cf9f8.bindTooltip(
+                `<div>
+                     8. Harlow's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d31297b80c96aab6ae94252cf0d3766 = L.marker(
+                [38.5772, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_633c4b80592915cf9e3c62da729fe160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d31297b80c96aab6ae94252cf0d3766.setIcon(icon_633c4b80592915cf9e3c62da729fe160);
+        
+    
+        var popup_3f9e05b48ba6e368f984fd77b8029205 = L.popup({"maxWidth": 300});
+
+        
+            var html_88afcb80dce36e0d79d2219f7c5f08f0 = $(`<div id="html_88afcb80dce36e0d79d2219f7c5f08f0" style="width: 100.0%; height: 100.0%;">     <b>9. Holy Spirits</b><br>     Address: 1050 20th Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_3f9e05b48ba6e368f984fd77b8029205.setContent(html_88afcb80dce36e0d79d2219f7c5f08f0);
+        
+
+        marker_7d31297b80c96aab6ae94252cf0d3766.bindPopup(popup_3f9e05b48ba6e368f984fd77b8029205)
+        ;
+
+        
+    
+    
+            marker_7d31297b80c96aab6ae94252cf0d3766.bindTooltip(
+                `<div>
+                     9. Holy Spirits
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e23b547dcf79c9d86f61bc607d1feea0 = L.marker(
+                [38.5772, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_a4bdec67bbd3682d1d0d17781cb41494 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e23b547dcf79c9d86f61bc607d1feea0.setIcon(icon_a4bdec67bbd3682d1d0d17781cb41494);
+        
+    
+        var popup_9c3d8003915febcf29e999706f6faff8 = L.popup({"maxWidth": 300});
+
+        
+            var html_0b09f820f2b62819681962349d699105 = $(`<div id="html_0b09f820f2b62819681962349d699105" style="width: 100.0%; height: 100.0%;">     <b>10. Jet's</b><br>     Address: 1226 20Th St, Sacramento, CA 95811<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_9c3d8003915febcf29e999706f6faff8.setContent(html_0b09f820f2b62819681962349d699105);
+        
+
+        marker_e23b547dcf79c9d86f61bc607d1feea0.bindPopup(popup_9c3d8003915febcf29e999706f6faff8)
+        ;
+
+        
+    
+    
+            marker_e23b547dcf79c9d86f61bc607d1feea0.bindTooltip(
+                `<div>
+                     10. Jet's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8149533fc8ecd37484e0c3a90ad78060 = L.marker(
+                [38.5737, -121.4875],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_7c07951514a6ebb9f1139e79e2dd6e0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8149533fc8ecd37484e0c3a90ad78060.setIcon(icon_7c07951514a6ebb9f1139e79e2dd6e0c);
+        
+    
+        var popup_b45531cdd8e2af9d075185c5d890f235 = L.popup({"maxWidth": 300});
+
+        
+            var html_8e736911224948a6ae062da13373d897 = $(`<div id="html_8e736911224948a6ae062da13373d897" style="width: 100.0%; height: 100.0%;">     <b>11. Karma Brew</b><br>     Address: 1530 16Th St A, Sacramento, CA 95814-6067<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_b45531cdd8e2af9d075185c5d890f235.setContent(html_8e736911224948a6ae062da13373d897);
+        
+
+        marker_8149533fc8ecd37484e0c3a90ad78060.bindPopup(popup_b45531cdd8e2af9d075185c5d890f235)
+        ;
+
+        
+    
+    
+            marker_8149533fc8ecd37484e0c3a90ad78060.bindTooltip(
+                `<div>
+                     11. Karma Brew
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_735ba51ab2fefbed3983311b10a2ab44 = L.marker(
+                [38.5768, -121.4822],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_bf8f29de29e11ec5b202e4361cef0dc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_735ba51ab2fefbed3983311b10a2ab44.setIcon(icon_bf8f29de29e11ec5b202e4361cef0dc5);
+        
+    
+        var popup_eae3a4fc5221fd2e1994f29bcc0098f4 = L.popup({"maxWidth": 300});
+
+        
+            var html_22ebabe48d826afee8ed4e38f2f0d7dd = $(`<div id="html_22ebabe48d826afee8ed4e38f2f0d7dd" style="width: 100.0%; height: 100.0%;">     <b>12. Kasbah Lounge</b><br>     Address: 2115 J Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_eae3a4fc5221fd2e1994f29bcc0098f4.setContent(html_22ebabe48d826afee8ed4e38f2f0d7dd);
+        
+
+        marker_735ba51ab2fefbed3983311b10a2ab44.bindPopup(popup_eae3a4fc5221fd2e1994f29bcc0098f4)
+        ;
+
+        
+    
+    
+            marker_735ba51ab2fefbed3983311b10a2ab44.bindTooltip(
+                `<div>
+                     12. Kasbah Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afd49edaf9d505ced07d7518726e840d = L.marker(
+                [38.5731, -121.4637],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_0881c7a5175ee5ff4f869e8902e37adc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afd49edaf9d505ced07d7518726e840d.setIcon(icon_0881c7a5175ee5ff4f869e8902e37adc);
+        
+    
+        var popup_23c1da7bc82179ef9bc7e75fe2c7bb17 = L.popup({"maxWidth": 300});
+
+        
+            var html_94cbcb61c3fed6e3bd12b9cb58bfb427 = $(`<div id="html_94cbcb61c3fed6e3bd12b9cb58bfb427" style="width: 100.0%; height: 100.0%;">     <b>13. Limelight Bar And Cafe</b><br>     Address: 1014 Alhambra Blvd, Sacramento, CA 95816-5213<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_23c1da7bc82179ef9bc7e75fe2c7bb17.setContent(html_94cbcb61c3fed6e3bd12b9cb58bfb427);
+        
+
+        marker_afd49edaf9d505ced07d7518726e840d.bindPopup(popup_23c1da7bc82179ef9bc7e75fe2c7bb17)
+        ;
+
+        
+    
+    
+            marker_afd49edaf9d505ced07d7518726e840d.bindTooltip(
+                `<div>
+                     13. Limelight Bar And Cafe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad90f99f4a69c3b4f335b3e6d0dd4484 = L.marker(
+                [38.5772, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_bac5e1eb07a4bbf267da2dc2df12d1e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad90f99f4a69c3b4f335b3e6d0dd4484.setIcon(icon_bac5e1eb07a4bbf267da2dc2df12d1e0);
+        
+    
+        var popup_460877da7909bf1a1d7e52e661f1a655 = L.popup({"maxWidth": 300});
+
+        
+            var html_c47521e34b25d15bd6ddc87a66187277 = $(`<div id="html_c47521e34b25d15bd6ddc87a66187277" style="width: 100.0%; height: 100.0%;">     <b>14. LowBrau</b><br>     Address: 1050 20Th St 100, Sacramento, CA 95811-3153<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_460877da7909bf1a1d7e52e661f1a655.setContent(html_c47521e34b25d15bd6ddc87a66187277);
+        
+
+        marker_ad90f99f4a69c3b4f335b3e6d0dd4484.bindPopup(popup_460877da7909bf1a1d7e52e661f1a655)
+        ;
+
+        
+    
+    
+            marker_ad90f99f4a69c3b4f335b3e6d0dd4484.bindTooltip(
+                `<div>
+                     14. LowBrau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4a2d332922b32d9d96028813ee4af25 = L.marker(
+                [38.5749, -121.4833],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_0398c0964f0dd3551fc7f5517641e623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4a2d332922b32d9d96028813ee4af25.setIcon(icon_0398c0964f0dd3551fc7f5517641e623);
+        
+    
+        var popup_d0a1e9d3584ecfa8e3d1b9f2ad97ab7f = L.popup({"maxWidth": 300});
+
+        
+            var html_ba2009872646480b884bc18b0a133fd5 = $(`<div id="html_ba2009872646480b884bc18b0a133fd5" style="width: 100.0%; height: 100.0%;">     <b>15. Mango's</b><br>     Address: 1930 K St, Sacramento, CA 95811-4107<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_d0a1e9d3584ecfa8e3d1b9f2ad97ab7f.setContent(html_ba2009872646480b884bc18b0a133fd5);
+        
+
+        marker_c4a2d332922b32d9d96028813ee4af25.bindPopup(popup_d0a1e9d3584ecfa8e3d1b9f2ad97ab7f)
+        ;
+
+        
+    
+    
+            marker_c4a2d332922b32d9d96028813ee4af25.bindTooltip(
+                `<div>
+                     15. Mango's
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e928b4a2b4b85f26a63bc54576fe6650 = L.marker(
+                [38.5772, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_cf4e3a11aa3d100021b71327e911fd97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e928b4a2b4b85f26a63bc54576fe6650.setIcon(icon_cf4e3a11aa3d100021b71327e911fd97);
+        
+    
+        var popup_f8080997189a4c1ec759cfb63b9871d4 = L.popup({"maxWidth": 300});
+
+        
+            var html_a24bd938cf184ea99306f373227e265e = $(`<div id="html_a24bd938cf184ea99306f373227e265e" style="width: 100.0%; height: 100.0%;">     <b>16. MARRS | Midtown Art Retail Restaurant Scene</b><br>     Address: 1050 20th Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_f8080997189a4c1ec759cfb63b9871d4.setContent(html_a24bd938cf184ea99306f373227e265e);
+        
+
+        marker_e928b4a2b4b85f26a63bc54576fe6650.bindPopup(popup_f8080997189a4c1ec759cfb63b9871d4)
+        ;
+
+        
+    
+    
+            marker_e928b4a2b4b85f26a63bc54576fe6650.bindTooltip(
+                `<div>
+                     16. MARRS | Midtown Art Retail Restaurant Scene
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c838c78bc5d70e1b43cdf37c960dd507 = L.marker(
+                [38.5746, -121.4834],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_b85edfe72db94c075a2a7535581d44d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c838c78bc5d70e1b43cdf37c960dd507.setIcon(icon_b85edfe72db94c075a2a7535581d44d2);
+        
+    
+        var popup_a64742f8ed121c31cc0d5f6a3f220596 = L.popup({"maxWidth": 300});
+
+        
+            var html_59f00d860c356ed54be212219774879c = $(`<div id="html_59f00d860c356ed54be212219774879c" style="width: 100.0%; height: 100.0%;">     <b>17. Mercantile Saloon</b><br>     Address: 1928 L St, Sacramento, CA 95811-4188<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_a64742f8ed121c31cc0d5f6a3f220596.setContent(html_59f00d860c356ed54be212219774879c);
+        
+
+        marker_c838c78bc5d70e1b43cdf37c960dd507.bindPopup(popup_a64742f8ed121c31cc0d5f6a3f220596)
+        ;
+
+        
+    
+    
+            marker_c838c78bc5d70e1b43cdf37c960dd507.bindTooltip(
+                `<div>
+                     17. Mercantile Saloon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_897c068c1e2f384e46c9efd4dfe003e4 = L.marker(
+                [38.5767, -121.4854],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_fed854088bbdd3676a97bd2b71d6d356 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_897c068c1e2f384e46c9efd4dfe003e4.setIcon(icon_fed854088bbdd3676a97bd2b71d6d356);
+        
+    
+        var popup_9ea7be49afc7210059244283f939b251 = L.popup({"maxWidth": 300});
+
+        
+            var html_5144f8ec90f27c18206af97c0ff91ffe = $(`<div id="html_5144f8ec90f27c18206af97c0ff91ffe" style="width: 100.0%; height: 100.0%;">     <b>18. Midtown Gastrobar</b><br>     Address: 1616 J Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_9ea7be49afc7210059244283f939b251.setContent(html_5144f8ec90f27c18206af97c0ff91ffe);
+        
+
+        marker_897c068c1e2f384e46c9efd4dfe003e4.bindPopup(popup_9ea7be49afc7210059244283f939b251)
+        ;
+
+        
+    
+    
+            marker_897c068c1e2f384e46c9efd4dfe003e4.bindTooltip(
+                `<div>
+                     18. Midtown Gastrobar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de82cba28a4385bb5ab4667378832d55 = L.marker(
+                [38.5767, -121.4854],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_c74f2bf24c0e427711fb4d4ff59ac4bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de82cba28a4385bb5ab4667378832d55.setIcon(icon_c74f2bf24c0e427711fb4d4ff59ac4bd);
+        
+    
+        var popup_281422dc22fd2e24afc6b7385bc83eb1 = L.popup({"maxWidth": 300});
+
+        
+            var html_7aa8e9e9d2bbadef45906d6652811f5a = $(`<div id="html_7aa8e9e9d2bbadef45906d6652811f5a" style="width: 100.0%; height: 100.0%;">     <b>19. Midtown Rooftop Lounge</b><br>     Address: 1616 J Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_281422dc22fd2e24afc6b7385bc83eb1.setContent(html_7aa8e9e9d2bbadef45906d6652811f5a);
+        
+
+        marker_de82cba28a4385bb5ab4667378832d55.bindPopup(popup_281422dc22fd2e24afc6b7385bc83eb1)
+        ;
+
+        
+    
+    
+            marker_de82cba28a4385bb5ab4667378832d55.bindTooltip(
+                `<div>
+                     19. Midtown Rooftop Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f004cdfd82d3561c73a73281345e258 = L.marker(
+                [38.5737, -121.4815],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_91712c378edfa13bfb0536d7ce7b1fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f004cdfd82d3561c73a73281345e258.setIcon(icon_91712c378edfa13bfb0536d7ce7b1fd7);
+        
+    
+        var popup_fb3430cd848e3e8aefffb63401c6f078 = L.popup({"maxWidth": 300});
+
+        
+            var html_7217422face9ea5286463c5a90801624 = $(`<div id="html_7217422face9ea5286463c5a90801624" style="width: 100.0%; height: 100.0%;">     <b>20. Old Tavern Bar & Grill</b><br>     Address: 1510 20th Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_fb3430cd848e3e8aefffb63401c6f078.setContent(html_7217422face9ea5286463c5a90801624);
+        
+
+        marker_5f004cdfd82d3561c73a73281345e258.bindPopup(popup_fb3430cd848e3e8aefffb63401c6f078)
+        ;
+
+        
+    
+    
+            marker_5f004cdfd82d3561c73a73281345e258.bindTooltip(
+                `<div>
+                     20. Old Tavern Bar & Grill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81d27b7de477490f1718390fe8fc9142 = L.marker(
+                [38.5747, -121.4704],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_24f1dbcf59949c99cbaf5c56278b2b6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81d27b7de477490f1718390fe8fc9142.setIcon(icon_24f1dbcf59949c99cbaf5c56278b2b6e);
+        
+    
+        var popup_1522564cc6e7615b4020f67644f329db = L.popup({"maxWidth": 300});
+
+        
+            var html_f7f880ce88633c84212a35bd852b4a0c = $(`<div id="html_f7f880ce88633c84212a35bd852b4a0c" style="width: 100.0%; height: 100.0%;">     <b>21. Red Rabbit</b><br>     Address: 2718 J St, Sacramento, CA 95816<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_1522564cc6e7615b4020f67644f329db.setContent(html_f7f880ce88633c84212a35bd852b4a0c);
+        
+
+        marker_81d27b7de477490f1718390fe8fc9142.bindPopup(popup_1522564cc6e7615b4020f67644f329db)
+        ;
+
+        
+    
+    
+            marker_81d27b7de477490f1718390fe8fc9142.bindTooltip(
+                `<div>
+                     21. Red Rabbit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fe1305f3331b52220b805932a415bd3 = L.marker(
+                [38.5762, -121.4829],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_a900571e8e3e1753696d270692900457 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fe1305f3331b52220b805932a415bd3.setIcon(icon_a900571e8e3e1753696d270692900457);
+        
+    
+        var popup_432a433258fb6ab1e0faa53106e1e6dc = L.popup({"maxWidth": 300});
+
+        
+            var html_630eebf8dbcf4b153b4b98a2ac1d141f = $(`<div id="html_630eebf8dbcf4b153b4b98a2ac1d141f" style="width: 100.0%; height: 100.0%;">     <b>22. Streets Pub & Grub</b><br>     Address: 1804 J St, Sacramento, CA 95811-3010<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_432a433258fb6ab1e0faa53106e1e6dc.setContent(html_630eebf8dbcf4b153b4b98a2ac1d141f);
+        
+
+        marker_4fe1305f3331b52220b805932a415bd3.bindPopup(popup_432a433258fb6ab1e0faa53106e1e6dc)
+        ;
+
+        
+    
+    
+            marker_4fe1305f3331b52220b805932a415bd3.bindTooltip(
+                `<div>
+                     22. Streets Pub & Grub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94ca2abf0fb4d1b61754ff9113553e3e = L.marker(
+                [38.5756, -121.4809],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_b7f97f023c2fb51b6a536de8be0be60d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94ca2abf0fb4d1b61754ff9113553e3e.setIcon(icon_b7f97f023c2fb51b6a536de8be0be60d);
+        
+    
+        var popup_6560136efa4d54566121d099b44e5878 = L.popup({"maxWidth": 300});
+
+        
+            var html_6e7a4e8f6b6f3ea6cd6729306dba6a46 = $(`<div id="html_6e7a4e8f6b6f3ea6cd6729306dba6a46" style="width: 100.0%; height: 100.0%;">     <b>23. The Cabin</b><br>     Address: 1207 21St St, Sacramento, CA 95811-4209<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_6560136efa4d54566121d099b44e5878.setContent(html_6e7a4e8f6b6f3ea6cd6729306dba6a46);
+        
+
+        marker_94ca2abf0fb4d1b61754ff9113553e3e.bindPopup(popup_6560136efa4d54566121d099b44e5878)
+        ;
+
+        
+    
+    
+            marker_94ca2abf0fb4d1b61754ff9113553e3e.bindTooltip(
+                `<div>
+                     23. The Cabin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9eed70726b3489bc4b2fe71055feeddc = L.marker(
+                [38.5749, -121.4824],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_c7599a8c63e6105eb449e82110676f6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9eed70726b3489bc4b2fe71055feeddc.setIcon(icon_c7599a8c63e6105eb449e82110676f6e);
+        
+    
+        var popup_db347417c4abe84950086d4f886845bb = L.popup({"maxWidth": 300});
+
+        
+            var html_d2fd799ea3857e98bc0b87936886d334 = $(`<div id="html_d2fd799ea3857e98bc0b87936886d334" style="width: 100.0%; height: 100.0%;">     <b>24. The Depot</b><br>     Address: 2001 K St Ste E, Sacramento, CA 95811-4262<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_db347417c4abe84950086d4f886845bb.setContent(html_d2fd799ea3857e98bc0b87936886d334);
+        
+
+        marker_9eed70726b3489bc4b2fe71055feeddc.bindPopup(popup_db347417c4abe84950086d4f886845bb)
+        ;
+
+        
+    
+    
+            marker_9eed70726b3489bc4b2fe71055feeddc.bindTooltip(
+                `<div>
+                     24. The Depot
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8701c8328af7b649b7e89c0452edf4a = L.marker(
+                [38.5738, -121.4762],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_225cb287d15f52c530490b662592e57b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8701c8328af7b649b7e89c0452edf4a.setIcon(icon_225cb287d15f52c530490b662592e57b);
+        
+    
+        var popup_e8aa82d8350affc8f3324934d2447a4b = L.popup({"maxWidth": 300});
+
+        
+            var html_1fc4a7b7d15c6b7c8131874685cf6c1a = $(`<div id="html_1fc4a7b7d15c6b7c8131874685cf6c1a" style="width: 100.0%; height: 100.0%;">     <b>25. The Flamingo House</b><br>     Address: 2315 K St, Sacramento, CA 95816-5012<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_e8aa82d8350affc8f3324934d2447a4b.setContent(html_1fc4a7b7d15c6b7c8131874685cf6c1a);
+        
+
+        marker_e8701c8328af7b649b7e89c0452edf4a.bindPopup(popup_e8aa82d8350affc8f3324934d2447a4b)
+        ;
+
+        
+    
+    
+            marker_e8701c8328af7b649b7e89c0452edf4a.bindTooltip(
+                `<div>
+                     25. The Flamingo House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2de9ff4f791a44c29992e4efa3bf5a91 = L.marker(
+                [38.5738, -121.476],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_2b03754eb6b9c2ae3befa888caedca51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2de9ff4f791a44c29992e4efa3bf5a91.setIcon(icon_2b03754eb6b9c2ae3befa888caedca51);
+        
+    
+        var popup_2977270efec1e53714dd47db18851f28 = L.popup({"maxWidth": 300});
+
+        
+            var html_36b5af491b5222711d3f904f55c69620 = $(`<div id="html_36b5af491b5222711d3f904f55c69620" style="width: 100.0%; height: 100.0%;">     <b>26. The Golden Bear</b><br>     Address: 2326 K St, Sacramento, CA 95816-5013<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_2977270efec1e53714dd47db18851f28.setContent(html_36b5af491b5222711d3f904f55c69620);
+        
+
+        marker_2de9ff4f791a44c29992e4efa3bf5a91.bindPopup(popup_2977270efec1e53714dd47db18851f28)
+        ;
+
+        
+    
+    
+            marker_2de9ff4f791a44c29992e4efa3bf5a91.bindTooltip(
+                `<div>
+                     26. The Golden Bear
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe3de87c8c8887dc4ad1dae454771458 = L.marker(
+                [38.5781, -121.4866],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_9a623e1e6ae7d6f0e9e87dfd2d35856e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe3de87c8c8887dc4ad1dae454771458.setIcon(icon_9a623e1e6ae7d6f0e9e87dfd2d35856e);
+        
+    
+        var popup_af526ba7db3845a8dd45bc2e0d6c55f3 = L.popup({"maxWidth": 300});
+
+        
+            var html_af2c5fcbc4c9abab6a0e73ce06794532 = $(`<div id="html_af2c5fcbc4c9abab6a0e73ce06794532" style="width: 100.0%; height: 100.0%;">     <b>27. The Grand</b><br>     Address: 1600 L Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_af526ba7db3845a8dd45bc2e0d6c55f3.setContent(html_af2c5fcbc4c9abab6a0e73ce06794532);
+        
+
+        marker_fe3de87c8c8887dc4ad1dae454771458.bindPopup(popup_af526ba7db3845a8dd45bc2e0d6c55f3)
+        ;
+
+        
+    
+    
+            marker_fe3de87c8c8887dc4ad1dae454771458.bindTooltip(
+                `<div>
+                     27. The Grand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4217adc8134182b778e84fddeaf0472c = L.marker(
+                [38.5747, -121.4681],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_c886f4d672e01be235447765f7e174c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4217adc8134182b778e84fddeaf0472c.setIcon(icon_c886f4d672e01be235447765f7e174c7);
+        
+    
+        var popup_a591d97c7144f4f1369cd1b7914271f7 = L.popup({"maxWidth": 300});
+
+        
+            var html_82f457eb2fa228074780e6fea6c96ed9 = $(`<div id="html_82f457eb2fa228074780e6fea6c96ed9" style="width: 100.0%; height: 100.0%;">     <b>28. The Jungle Bird</b><br>     Address: 2516 J St, Sacramento, CA 95816-4815<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_a591d97c7144f4f1369cd1b7914271f7.setContent(html_82f457eb2fa228074780e6fea6c96ed9);
+        
+
+        marker_4217adc8134182b778e84fddeaf0472c.bindPopup(popup_a591d97c7144f4f1369cd1b7914271f7)
+        ;
+
+        
+    
+    
+            marker_4217adc8134182b778e84fddeaf0472c.bindTooltip(
+                `<div>
+                     28. The Jungle Bird
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e393aa51b201597e31ad46cdc376f11 = L.marker(
+                [38.5762, -121.4829],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_c9eb42616a3d2c6213072b524ef01732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e393aa51b201597e31ad46cdc376f11.setIcon(icon_c9eb42616a3d2c6213072b524ef01732);
+        
+    
+        var popup_6ba7401bbd8b5cfabb0ef07236750ffd = L.popup({"maxWidth": 300});
+
+        
+            var html_49aa3cba54e0a15e558f3d02f1050909 = $(`<div id="html_49aa3cba54e0a15e558f3d02f1050909" style="width: 100.0%; height: 100.0%;">     <b>29. The Loc Bar</b><br>     Address: 1812 J St 2, Sacramento, CA 95811-3014<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_6ba7401bbd8b5cfabb0ef07236750ffd.setContent(html_49aa3cba54e0a15e558f3d02f1050909);
+        
+
+        marker_0e393aa51b201597e31ad46cdc376f11.bindPopup(popup_6ba7401bbd8b5cfabb0ef07236750ffd)
+        ;
+
+        
+    
+    
+            marker_0e393aa51b201597e31ad46cdc376f11.bindTooltip(
+                `<div>
+                     29. The Loc Bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04ddabb94451522ee273ecd005a53323 = L.marker(
+                [38.5741, -121.4877],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_539255989517ab5ab834a1138ca27e10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_04ddabb94451522ee273ecd005a53323.setIcon(icon_539255989517ab5ab834a1138ca27e10);
+        
+    
+        var popup_8353d9dd7f1e7edf3b8a54d02e9d4bdb = L.popup({"maxWidth": 300});
+
+        
+            var html_3669162d75b9de6d02bb07e3562cb0bf = $(`<div id="html_3669162d75b9de6d02bb07e3562cb0bf" style="width: 100.0%; height: 100.0%;">     <b>30. University of Beer</b><br>     Address: 1510 16th Street, Sacramento, CA, USA<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_8353d9dd7f1e7edf3b8a54d02e9d4bdb.setContent(html_3669162d75b9de6d02bb07e3562cb0bf);
+        
+
+        marker_04ddabb94451522ee273ecd005a53323.bindPopup(popup_8353d9dd7f1e7edf3b8a54d02e9d4bdb)
+        ;
+
+        
+    
+    
+            marker_04ddabb94451522ee273ecd005a53323.bindTooltip(
+                `<div>
+                     30. University of Beer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a11c681bd6d3a9a24d0cf2b0d0da6a01 = L.marker(
+                [38.5727, -121.4847],
+                {}
+            ).addTo(map_6bf8d6dd758473a614d0946b35686a1c);
+        
+    
+            var icon_b026329ce855ca1d5dae1cc4fd66391f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a11c681bd6d3a9a24d0cf2b0d0da6a01.setIcon(icon_b026329ce855ca1d5dae1cc4fd66391f);
+        
+    
+        var popup_ed4e565e8476b91c24a1ec355987d57b = L.popup({"maxWidth": 300});
+
+        
+            var html_70739a4e1660cd4fbbb4a6eced033bf9 = $(`<div id="html_70739a4e1660cd4fbbb4a6eced033bf9" style="width: 100.0%; height: 100.0%;">     <b>31. Zebra Club</b><br>     Address: 1900 P St, Sacramento, CA 95811-6804<br>     <a href="#" target="_blank">Website</a>     </div>`)[0];
+            popup_ed4e565e8476b91c24a1ec355987d57b.setContent(html_70739a4e1660cd4fbbb4a6eced033bf9);
+        
+
+        marker_a11c681bd6d3a9a24d0cf2b0d0da6a01.bindPopup(popup_ed4e565e8476b91c24a1ec355987d57b)
+        ;
+
+        
+    
+    
+            marker_a11c681bd6d3a9a24d0cf2b0d0da6a01.bindTooltip(
+                `<div>
+                     31. Zebra Club
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
